@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_barcode_random_form_view" model="ir.ui.view">
+        <field name="name">product.template.barcode.random.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <button name="generat_random_barcode" string ="Generar Codigo de Barras" type="object" class="btn btn-primary" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
